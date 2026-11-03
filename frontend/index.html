@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResolveAI | Customer Resolution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Resolve<span>AI</span></div>
+    <nav>
+        <button onclick="showSection('customer')">Customer</button>
+        <button onclick="showSection('admin')">Admin Dashboard</button>
+    </nav>
+</header>
+
+<main>
+
+    <!-- CUSTOMER DASHBOARD -->
+    <section id="customer" class="section">
+
+        <div class="hero">
+            <h1>Customer Resolution Center</h1>
+            <p>Submit your refund request and let ResolveAI investigate it.</p>
+        </div>
+
+        <div class="card">
+            <h2>Submit Refund Request</h2>
+
+            <form id="refundForm">
+
+                <label>Customer ID</label>
+                <input type="number" id="customer_id" required placeholder="Example: 1">
+
+                <label>Order Number</label>
+                <input type="text" id="order_number" required placeholder="Example: ORD1001">
+
+                <label>Reason for Refund</label>
+                <textarea id="reason" required minlength="5"
+                    placeholder="Explain why you want a refund"></textarea>
+
+                <button type="submit" class="primary-btn">
+                    Investigate Refund
+                </button>
+
+            </form>
+
+            <div id="result"></div>
+        </div>
+
+        <div class="card">
+            <h2>Refund History</h2>
+            <button class="secondary-btn" onclick="loadRefunds()">
+                Refresh History
+            </button>
+            <div id="customerHistory"></div>
+        </div>
+
+    </section>
+
+
+    <!-- ADMIN DASHBOARD -->
+    <section id="admin" class="section hidden">
+
+        <div class="hero">
+            <h1>Admin Dashboard</h1>
+            <p>Monitor refund requests and review cases requiring human approval.</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Total Requests</h3>
+                <p id="totalRequests">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Approved</h3>
+                <p id="approvedRequests">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Pending Review</h3>
+                <p id="pendingRequests">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Rejected</h3>
+                <p id="rejectedRequests">0</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>All Refund Requests</h2>
+            <button class="secondary-btn" onclick="loadRefunds()">
+                Refresh Dashboard
+            </button>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Customer</th>
+                            <th>Order</th>
+                            <th>Risk</th>
+                            <th>Status</th>
+                            <th>Decision</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="refundTable"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Investigation Logs</h2>
+            <div id="logs"></div>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>ResolveAI — Autonomous Customer Resolution System</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

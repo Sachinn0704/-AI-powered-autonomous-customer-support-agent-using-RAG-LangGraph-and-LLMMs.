@@ -1,0 +1,9 @@
+RESOLVEAI ORDER CANCELLATION POLICY
+
+1. Customers can cancel orders that are in processing status.
+2. Shipped orders cannot be cancelled automatically.
+3. Delivered orders cannot be cancelled.
+4. Already cancelled orders cannot be cancelled again.
+5. Customers must provide a valid order number.
+6. Cancellation requests are verified against customer ownership.
+7. Successful cancellations update the order status to cancelled.

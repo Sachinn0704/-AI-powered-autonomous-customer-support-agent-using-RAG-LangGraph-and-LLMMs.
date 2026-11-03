@@ -1,0 +1,25 @@
+RESOLVEAI FREQUENTLY ASKED QUESTIONS
+
+Q1. How can I track my order?
+Customers can provide their order number to check order status.
+
+Q2. How can I request a refund?
+Customers can submit a refund request with their order number. Eligibility is checked according to the refund policy.
+
+Q3. How can I return a product?
+Customers can submit a return request with their order number. The system checks return eligibility.
+
+Q4. Can I cancel my order?
+Orders in processing status can be cancelled.
+
+Q5. What happens if my refund request is high risk?
+High-risk refund requests are forwarded for human review.
+
+Q6. What information is required for customer support?
+Customers should provide their valid order number and explain their issue.
+
+Q7. What if my order number is invalid?
+The system informs the customer that the order could not be found.
+
+Q8. Can I return an order after 30 days?
+No. According to the current return policy, return requests must be submitted within 30 days of delivery.

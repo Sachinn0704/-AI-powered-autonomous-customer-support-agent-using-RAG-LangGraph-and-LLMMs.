@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ResolveAI - AI Assistant</title>
+
+    <link rel="stylesheet" href="ai-chat.css">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <header class="chat-header">
+            <div>
+                <h2>ResolveAI Assistant</h2>
+                <p>AI-powered customer support</p>
+            </div>
+            <span class="status">● Online</span>
+        </header>
+
+        <main id="chatMessages" class="chat-messages">
+
+            <div class="message bot-message">
+                <div class="message-content">
+                    Hello! I'm ResolveAI. Ask me anything about our refund,
+                    return, cancellation and customer support policies.
+                </div>
+            </div>
+
+        </main>
+
+        <div class="source-area" id="sourceArea"></div>
+
+        <footer class="chat-input-area">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Ask your question..."
+                autocomplete="off"
+            >
+
+            <button id="sendButton" onclick="sendMessage()">
+                Send
+            </button>
+
+        </footer>
+
+    </div>
+
+    <script src="ai-chat.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ResolveAI - Customer Support</title>
+
+    <link rel="stylesheet" href="chat.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <header class="header">
+
+            <div class="logo">
+                <h2>Resolve<span>AI</span></h2>
+                <p>Intelligent Customer Support</p>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                AI Support Online
+            </div>
+
+        </header>
+
+
+        <main class="chat-container">
+
+            <div class="chat-header">
+
+                <div class="bot-avatar">
+                    AI
+                </div>
+
+                <div>
+                    <h3>ResolveAI Assistant</h3>
+                    <p>How can I help you today?</p>
+                </div>
+
+            </div>
+
+
+            <div class="chat-messages" id="chatMessages">
+
+                <div class="message bot-message">
+
+                    <div class="message-avatar">
+                        AI
+                    </div>
+
+                    <div class="message-content">
+                        <p>
+                            Hello! Welcome to ResolveAI.
+                            I'm your AI customer support assistant.
+                        </p>
+
+                        <p>
+                            I can help you track orders, request refunds,
+                            manage returns, and resolve customer issues.
+                        </p>
+
+                        <p>How can I help you today?</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="suggestions">
+
+                <button onclick="sendSuggestion('Where is my order ORD1001?')">
+                    Track Order
+                </button>
+
+                <button onclick="sendSuggestion('I want a refund for order ORD1001')">
+                    Request Refund
+                </button>
+
+                <button onclick="sendSuggestion('I want to cancel order ORD1001')">
+                    Cancel Order
+                </button>
+
+                <button onclick="sendSuggestion('I want to return my product')">
+                    Return Product
+                </button>
+
+            </div>
+
+
+            <div class="chat-input-area">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Type your message here..."
+                    autocomplete="off"
+                >
+
+                <button id="sendButton" onclick="sendMessage()">
+                    Send
+                </button>
+
+            </div>
+
+
+            <p class="footer-text">
+                ResolveAI provides automated support with human assistance when needed.
+            </p>
+
+        </main>
+
+    </div>
+
+
+    <script src="chat.js"></script>
+
+</body>
+
+</html>
